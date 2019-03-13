@@ -28,5 +28,13 @@
 
 > models.py, 관계 데이터베이스 설정( models.ForiegnKey, related_named접근) 
 >
-> [Django models.py](./2019-02-21-django.md)
+> [Django - models.py](./2019-02-21-django.md)
+
+<br>
+
+2019.03.13
+
+>IPython - embed(), **url 분리(2), GET/POST요청 분기**, POST요청으로 DELETE, **get_object_or_404()**, comment(댓글)
+>
+>[GET/POST 분리](./2019-03-13-django.md)
 
