@@ -1,0 +1,24 @@
+{% extends 'board/base.html' %}
+{% block title %}
+    Edit Article
+{% endblock %}
+{% block button %}
+    <button>
+        <a href="{% url 'board:article_list' %}">Article List</a>
+    </button>
+{% endblock %}
+{% block body %}
+    <form action="{% url 'board:update_article' article.id %}" method="POST">
+        {% csrf_token %}
+        <div>
+            <label for="title">title : </label>
+            <input type="text" name="title" value="{{ article.title }}" id="title">
+        </div>
+        <div><label for="content">content</label>
+            <textarea name="content" id="content" cols="30" rows="10">{{ article.content }}</textarea>
+        </div>
+        <div>
+            <button type="submit">수정</button>
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'board/base.html' %}
+{% block title %}
+    Article List
+{% endblock %}
+{% block button %}
+    <button>
+        <a href="{% url 'board:create_article' %}">New Article</a>
+    </button>
+{% endblock %}
+{% block body %}
+    <h1>Article List</h1>
+    {% if articles %}
+        <ul>
+            {% for article in articles %}
+                <li>
+                    <a href="{% url 'board:article_detail' article.id %}">
+                        {{ article.title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}

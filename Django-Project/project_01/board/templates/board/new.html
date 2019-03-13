@@ -1,0 +1,26 @@
+{% extends 'board/base.html' %}
+{% block title %}
+    New Article
+{% endblock %}
+{% block button %}
+    <a href="{% url 'board:article_list' %}">New Article</a>
+{% endblock %}
+{% block body %}
+    <h1>New Article</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <div>
+            <label for="title">title:</label>
+            <input type="text" name="title" id="title">
+        </div>
+        <div>
+            <label for="content">
+                <textarea name="content" id="" cols="30" rows="10"></textarea>
+            </label>
+        </div>
+        <div>
+            <button type="submmit">제출</button>
+        </div>
+    </form>
+
+{% endblock %}

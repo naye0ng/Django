@@ -1,0 +1,8 @@
+venv/
+
+# Pycharm Auto Generated DIR
+.idea/
+__pycache__/
+
+# DB
+*.sqlite3
