@@ -1,0 +1,39 @@
+<header class="mt-3">
+    <form action="{% url 'sns:create_posting' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-row align-items-center">
+            <!-- icon select tag -->
+            <div class="col-auto my-1">
+                <label for="icon" class="sr-only">icon</label>
+                <select name="icon" id="icon" class="custom-select mr-sm-2">
+                    <option value="fas fa-question">?</option>
+                    <option value="far fa-smile">:)</option>
+                    <option value="far fa-angry">:(</option>
+                    <option value="far fa-smile-wink">;)</option>
+                    <option value="fab fa-angrycreative">angrycreative</option>
+                </select>
+            </div>
+            <!-- content input tag -->
+            <div class="col-sm-6 my-1">
+                <label for="content" class="sr-only">content</label>
+                <input type="text" name="content" id="content" placeholder="Feels like" class="form-control">
+            </div>
+            <!-- image file input tag -->
+            <div class="col-sm-4 my-1 input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">upload</span>
+                </div>
+                <div class="custom-file">
+                    <label for="image" class="custom-file-label">Select File</label>
+                    <input type="file" id="image" name="image" class="custom-file-input" accept="image/*">
+                </div>
+            </div>
+            <!-- submit button -->
+            <div class="col-auto my-1">
+                <button class="btn btn-primary" type="submit">submit</button>
+            </div>
+
+        </div>
+    </form>
+
+</header>

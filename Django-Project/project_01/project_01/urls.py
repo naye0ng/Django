@@ -23,6 +23,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('board/', include('board.urls')),
+    path('sns/',include('sns.urls')),
 ]
 
 # dev에서는 꼭 써야 함. (DEBUG='TRUE')
