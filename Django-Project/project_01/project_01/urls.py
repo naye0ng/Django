@@ -16,7 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# 파일업로드
+from django.conf.urls.static import static
+from django.conf import settings
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('board/', include('board.urls')),
 ]
+
+# dev에서는 꼭 써야 함. (DEBUG='TRUE')
+# 배포(DEBUG='False')상태에서는 빈 배열이 들어오는데 += 연산이므로 영향이 없다.
+# 꼭 써주는 것이 좋다.
+urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
