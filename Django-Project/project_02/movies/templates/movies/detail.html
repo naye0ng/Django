@@ -1,0 +1,39 @@
+{% extends 'movies/base.html' %}
+{% block is_detail %}
+active
+{% endblock %}
+{% block title %}
+    영화 상세 정보
+{% endblock %}
+{% block body %}
+    {% if movie %}
+        <div class="container">
+            <div class="row align-item-center mt-5">
+                <div class="col-md-4 mb-2">
+                    <img src="{{ movie.poster_url }}" class="card-img-top" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="movie-desc">
+                        <h5 class="card-title">{{ movie.title }}</h5>
+                        <p>
+                            장르: {{ movie.genre.name }}
+                            <br/>
+                            누적관객수: {{ movie.audience }}
+                        </p>
+                        <p class="card-text">{{ movie.description }}</p>
+                    </div>
+                    <div class="movie-btn text-right mt-5">
+                        <!-- 영화 삭제 버튼 -->
+                        <form action="{% url 'movies:delete_movie' movie.id %}" method="POST">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-primary">삭제</button>
+                        </form>
+                    </div>
+                    <hr/>
+                    <!-- score block -->
+                    {% include 'movies/_score.html' %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'movies/base.html' %}
+{% block is_list %}
+active
+{% endblock %}
+{% block title %}
+    영화목록
+{% endblock %}
+{% block body %}
+    <div class="container">
+    <section class="card-columns mt-5">
+            {% if movies %}
+                {% for movie in movies %}
+                    <article class="card" style="width: 18rem;">
+                        <img src="{{ movie.poster_url }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="{% url 'movies:movie_detail' movie.id %}">
+                                <h5 class="card-title">{{ movie.title }}</h5>
+                            </a>
+                            <p class="card-text">{{ movie.genre.name }}</p>
+                            <p class="card-text">{{ movie.description }}</p>
+                        </div>
+                    </article>
+                {% endfor %}
+            {% endif %}
+    </section>
+    </div>
+{% endblock %}
