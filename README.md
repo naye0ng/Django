@@ -48,3 +48,23 @@
 >
 >[파일 업로드](./2019-03-14-django.md)
 
+<br>
+
+2019.03.20
+
+>로그인 / 로그아웃 :
+>
+>authenticate(), login(), messages(), logout()
+>
+>[로그인 / 로그아웃](./2019-03-20-django.md)
+
+<br>
+
+2019.03.21
+
+>회원가입 / form태그 자동생성 :
+>
+>User클래스 사용(views.py, mpdels.py), **is_valid()** , cleaned_data, form 클래스, **ModelForm 클래스**, **UserCreationForm() : 자동 회원가입 form생성**
+>
+>[회원가입](./2019-03-21-django.md)
+
