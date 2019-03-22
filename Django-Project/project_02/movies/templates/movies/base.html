@@ -20,7 +20,17 @@
     <a class="nav-link {% block is_detail %}{% endblock %}" href="" >상세보기</a>
   </li>
 </ul>
-
+{% if messages %}
+    <!-- 메시지를 보여준다 -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      {% for message in messages %}
+        {{ message }}
+      {% endfor %}
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {% endif %}
 {% block body %}
 {% endblock %}
 

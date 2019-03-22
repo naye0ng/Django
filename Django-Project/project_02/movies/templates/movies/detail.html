@@ -23,6 +23,10 @@ active
                         <p class="card-text">{{ movie.description }}</p>
                     </div>
                     <div class="movie-btn text-right mt-5">
+                        <!-- 영화 수정 버튼 -->
+                        <a href="{% url 'movies:edit_movie' movie.id %}">
+                            <button type="submit" class="btn btn-primary">수정</button>
+                        </a>
                         <!-- 영화 삭제 버튼 -->
                         <form action="{% url 'movies:delete_movie' movie.id %}" method="POST">
                             {% csrf_token %}
