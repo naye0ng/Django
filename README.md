@@ -74,9 +74,17 @@
 
 > 인스타그램 클론 코딩 :
 >
-> ModelForm, **Django-Bootstrap4**(ModelForm에서 bootstrap사용)
+> ModelForm, **Django-Bootstrap4**(ModelForm에서 bootstrap사용), **get_object_or_404()**
 >
-> [인스타그램 클론 코딩](./2019-04-08-jango.md)
+> [인스타그램 클론 코딩](./2019-04-08-django.md)
 
+<br>
 
+2019.04.11
+
+> 인스타그램 클론 코딩2 :
+>
+> 이미지 업로드
+>
+> [인스타그램 클론 코딩](./2019-04-11-django.md)
 
