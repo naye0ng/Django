@@ -1,4 +1,4 @@
-# Django
+# @login_requiredDjango
 
 *2019.02.13*
 
@@ -98,3 +98,12 @@
 >
 > [M:N 관계 모델링](./2019-04-12-django.md)
 
+<br>
+
+2019.04.15
+
+> like 기능 만들기 :
+>
+> **@login_required:  next**, account, AuthenticationForm(Django가 제공하는 UserForm), get_user_model(), **form.save(commit=False) 옵션**으로 최종 저장 보류
+> 
+> [like 기능 / @login_required](./2019-04-15-django.md)
