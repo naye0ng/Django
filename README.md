@@ -107,3 +107,16 @@
 > **@login_required:  next**, account, AuthenticationForm(Django가 제공하는 UserForm), get_user_model(), **form.save(commit=False) 옵션**으로 최종 저장 보류
 > 
 > [like 기능 / @login_required](./2019-04-15-django.md)
+
+<br>
+
+2019.04.16
+
+> 댓글, 회원정보수정 기능 만들기 :
+>
+> 댓글 : **@require_POST**
+>
+> 회원정보수정 : get_user_model(), UserChangeForm, PasswordChangeForm, update_session_auth_hash으로 세션 유지
+>
+> [comment 및  follow 기능](./2019-04-16-django.md)
+
