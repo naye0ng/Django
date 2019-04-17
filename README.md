@@ -118,5 +118,15 @@
 >
 > 회원정보수정 : get_user_model(), UserChangeForm, PasswordChangeForm, update_session_auth_hash으로 세션 유지
 >
-> [comment 및  follow 기능](./2019-04-16-django.md)
+> [comment 및  회원 정보 수정 기능](./2019-04-16-django.md)
+
+<br>
+
+2019.04.17
+
+> Follow 기능 만들기 :
+>
+>  **OneToOneField**, **get_or_create()**, 
+>
+>  [ follow 기능](./2019-04-17-django.md)
 
