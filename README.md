@@ -130,3 +130,14 @@
 >
 >  [ follow 기능](./2019-04-17-django.md)
 
+<br>
+
+2019.04.18
+
+> 팔로우 피드 만들기:
+>
+> Django Queryset : **filter()**, **Q**
+>
+> 에러 핸들링
+>
+>  [ follow  피드](./2019-04-17-django.md)
