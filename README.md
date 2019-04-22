@@ -1,4 +1,4 @@
-# @login_requiredDjango
+# Django
 
 *2019.02.13*
 
@@ -140,4 +140,4 @@
 >
 > 에러 핸들링
 >
->  [ follow  피드](./2019-04-17-django.md)
+>  [ follow  피드](./2019-04-18-django.md)
