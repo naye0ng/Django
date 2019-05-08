@@ -1,6 +1,6 @@
 # Django
 
-*2019.02.13*
+2019.02.13
 
 > Django 기본, **pyenv 및 virtualenv 환경설정**, 프로젝트 및 앱 생성
 >
@@ -8,7 +8,7 @@
 
 <br>
 
-*2019.02.14*
+2019.02.14
 
 > Django template language, **ORM**, admin.py, migrations, css추가
 >
@@ -16,7 +16,7 @@
 
 <br>
 
-*2019.02.20*
+2019.02.20
 
 >추가 쉘 명령어,  **URL분리**,  **Django POST Request**, csrf token, URL name(별명), **templates폴더 구조**
 >
@@ -24,7 +24,7 @@
 
 <br>
 
-*2019.02.21*
+2019.02.21
 
 > models.py, 관계 데이터베이스 설정( models.ForiegnKey, related_named접근) 
 >
@@ -144,11 +144,23 @@
 
 <br>
 
-2019.04.18
+2019.05.07
 
 > Django - Rest API 만들기
 >
 > Django Rest API 
 >
 >  [Rest API](./2019-05-07-django.md)
+
+<br>
+
+2019.05.08
+
+> [Stick Notes : 간단한 메모 앱 만들기 ]
+>
+> Django기반의 Rest API 와  Vue.js 연동하기
+>
+> corsheaders, **cors**
+>
+>  [Rest API & Vue.js](./2019-05-08-django.md)
 
