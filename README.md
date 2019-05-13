@@ -164,3 +164,11 @@
 >
 >  [Rest API & Vue.js](./2019-05-08-django.md)
 
+<br>
+
+2019.05.13
+
+> Heroku로 Django 프로젝트 배포하기
+>
+>  [Django 프로젝트 배포](./2019-05-13-django.md)
+
